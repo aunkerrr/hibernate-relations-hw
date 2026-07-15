@@ -6,7 +6,7 @@
 
         <!-- JDBC Database Connection Settings -->
         <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3309/relations</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/relations</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">kali</property>
 
@@ -16,6 +16,7 @@
         <property name="hibernate.c3p0.timeout">300</property>
 
         <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MariaDBDialect</property>
 
         <!-- Enable Hibernate to automatically create/drop tables -->
         <property name="hibernate.hbm2ddl.auto">update</property>
